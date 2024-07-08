@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Úkolovníček</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="mainCont">
+      <div id="header">
+        <span>Úkolovníček</span>
+        <button onclick="newTodo()">+</button>
+      </div>
+
+      <div id="content">
+        <div id="left-menu">
+          <div id="projects"></div>
+
+          <div id="project-formular">
+            <input id="project-name" maxlength="13" />
+            <button onclick="projectAdd()">+</button>
+            <button onclick="projectAddDel()">X</button>
+          </div>
+
+          <button onclick="newProject()">Nový Projekt</button>
+        </div>
+
+        <div id="main"></div>
+
+        <div id="formular">
+          <div>
+            <h1>Nový Úkol:</h1>
+            <button onclick="closeForm()">X</button>
+          </div>
+          <label for="form-title">Název: </label>
+          <input id="form-title" />
+          <br />
+          <label for="form-project">Projekt: </label>
+          <select id="form-project"></select>
+          <br />
+          <label for="form-descr">Popis: </label>
+          <textarea id="form-descr"></textarea>
+          <br />
+          <div style="display: flex; gap: 1em; align-items: center">
+            <label for="form-date">Datum: </label>
+            <input id="form-date" type="date" />
+            <br />
+            <label for="form-priority">Priorita: </label>
+            <input
+              id="form-priority"
+              type="range"
+              min="1"
+              max="5"
+              onInput="document.querySelector('#rangeValue').innerHTML = this.value"
+            />
+            <span id="rangeValue">3</span>
+          </div>
+          <br />
+          <label for="form-notes">Poznámky: </label>
+          <textarea id="form-notes"></textarea>
+          <br />
+
+          <button onclick="todoAdd()">Přidat</button>
+        </div>
+
+        <div id="confirmation">
+          Are you Sure?
+          <button onclick="getConfirmation('yes')">Yes!</button>
+          <button onclick="getConfirmation('no')">No!</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

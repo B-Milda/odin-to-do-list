@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+button {
+  font-family: "Raleway", sans-serif;
+}
+
+#confirmation {
+  display: none;
+}
+
+#formular {
+  display: none;
+  background-color: #f7f7f7;
+  gap: 0.25em;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+#formular > input {
+  outline: none;
+  border: 1px solid black;
+  text-align: center;
+}
+
+#formular > input[type="range"] {
+  transform: rotate(180deg); /* Rotate slider */
+}
+
+#formular > div:first-of-type {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+#formular > div:first-of-type > button {
+  position: absolute;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#formular > button {
+  background: -webkit-linear-gradient(left, #ed1c24 0%, #140757 100%);
+  border: none;
+  padding: 0.5em;
+  color: white;
+  height: 2em;
+  width: 5em;
+  line-height: 1em;
+  font-size: 1.25em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#form-descr {
+  height: 15em;
+  width: 60em;
+}
+
+#form-date {
+  height: 2em;
+}
+
+#form-notes {
+  height: 10em;
+  width: 60em;
+}
+
+#content {
+  display: flex;
+  flex-grow: 1;
+  gap: 1em;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+#projects > button {
+  position: relative;
+  background-color: white;
+  top: -2.5em;
+  left: 7em;
+  width: 3em;
+  background-color: none;
+  outline: none;
+  border: none;
+}
+
+#projects > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#projects > div > button {
+  background-color: #f7f7f7;
+  height: 2em;
+  border: none;
+  cursor: pointer;
+}
+
+#projects > div > p {
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+#projects > div > p > p {
+  margin-left: 20%;
+  font-weight: normal;
+}
+
+#main {
+  margin: 1em;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+
+/* #main > div {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+} */
+
+#main > div > button {
+  background-color: white;
+  font-size: 1em;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+#left-menu {
+  display: flex;
+  flex-direction: column;
+  width: 10em;
+  padding: 1em;
+  padding-top: 0.5em;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+#left-menu > button {
+  background: -webkit-linear-gradient(left, #ed1c24 0%, #140757 100%);
+  color: white;
+  padding: 0.5em;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 1em;
+  background: -webkit-linear-gradient(left, #140757 0%, #ed1c24 100%);
+  color: white;
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 0.25em;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+#header > button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+#mainCont {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#project-formular {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  align-self: flex-end;
+}
+
+#project-formular > input {
+  width: 100%;
+  height: 50%;
+  font-family: "Raleway", sans-serif;
+}
+
+#project-formular > button {
+  background-color: #f7f7f7;
+  font-weight: bold;
+  font-size: 2em;
+  border: none;
+  cursor: pointer;
+}
+
+#project-formular > button:last-of-type {
+  font-size: 0.75em;
+}
